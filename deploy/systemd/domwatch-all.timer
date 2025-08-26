@@ -1,0 +1,8 @@
+[Unit]
+Description=6-hourly DomWatch scan for all domains
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=6h
+Persistent=true
+[Install]
+WantedBy=timers.target

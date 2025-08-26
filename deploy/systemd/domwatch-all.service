@@ -1,0 +1,11 @@
+[Unit]
+Description=DomWatch scan for all domains
+Wants=network-online.target
+After=network-online.target
+[Service]
+WorkingDirectory=/opt/domwatch
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+ExecStart=/usr/local/bin/domwatch scan --all
+User=root
+Group=root
+Nice=10

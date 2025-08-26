@@ -1,0 +1,9 @@
+domwatch
+bin/
+dist/
+*.test
+*.out
+.DS_Store
+Thumbs.db
+data/
+domains.txt
